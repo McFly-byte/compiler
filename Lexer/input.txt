@@ -1,0 +1,5 @@
+int a = 123;
+double d = 12.135;
+auto _i12 = a + d;
+int 3aa = 15;
+cout << _i12 << endl;
