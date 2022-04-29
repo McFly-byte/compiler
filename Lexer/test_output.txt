@@ -1,0 +1,36 @@
+VN ( nonterminal character ) 
+		AD E Final Operator Start Token 
+VT ( terminal character ) 
+		$ % * + - / 0 1 2 3 4 5 6 7 8 9 < = > _ a b c d e f g h i j k l m n o p q r s t u v w x y z 
+Start ( initial state ) 
+		Start
+Final ( final state ) 
+		Final	
+Tag 
+		Operator 2	Token 1	
+AD 1	E 2	Final 1	Operator 2	Token 1	
+
+AD: ( $ , Final ); ( a , AD ); ( b , AD ); ( c , AD ); ( d , AD ); ( e , AD ); ( f , AD ); ( g , AD ); ( h , AD ); ( i , AD ); ( j , AD ); ( k , AD ); ( l , AD ); ( m , AD ); ( n , AD ); ( o , AD ); ( p , AD ); ( q , AD ); ( r , AD ); ( s , AD ); ( t , AD ); ( u , AD ); ( v , AD ); ( w , AD ); ( x , AD ); ( y , AD ); ( z , AD ); ( _ , AD ); ( 1 , AD ); ( 2 , AD ); ( 3 , AD ); ( 4 , AD ); ( 5 , AD ); ( 6 , AD ); ( 7 , AD ); ( 8 , AD ); ( 9 , AD ); ( 0 , AD ); 
+E: ( $ , Final ); ( = , Final ); 
+Final: NULL
+Operator: ( + , E ); ( - , E ); ( * , E ); ( / , E ); ( % , E ); ( = , E ); ( < , E ); ( > , E ); 
+Start: ( $ , Token ); ( $ , Operator ); 
+Token: ( a , AD ); ( b , AD ); ( c , AD ); ( d , AD ); ( e , AD ); ( f , AD ); ( g , AD ); ( h , AD ); ( i , AD ); ( j , AD ); ( k , AD ); ( l , AD ); ( m , AD ); ( n , AD ); ( o , AD ); ( p , AD ); ( q , AD ); ( r , AD ); ( s , AD ); ( t , AD ); ( u , AD ); ( v , AD ); ( w , AD ); ( x , AD ); ( y , AD ); ( z , AD ); ( _ , AD ); 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VN ( nonterminal character ) 
+		T0 T1 T2 T3 
+VT ( terminal character ) 
+		$ % * + - / 0 1 2 3 4 5 6 7 8 9 < = > _ a b c d e f g h i j k l m n o p q r s t u v w x y z 
+Start ( initial state ) 
+		T0
+Final ( final state ) 
+		T1	T2	T3	
+Tag 
+		Operator 2	Token 1	
+AD 1	E 2	Final 1	Operator 2	Token 1	
+
+T0: ( + , T1 ); ( - , T1 ); ( * , T1 ); ( / , T1 ); ( % , T1 ); ( = , T1 ); ( < , T1 ); ( > , T1 ); ( a , T2 ); ( b , T2 ); ( c , T2 ); ( d , T2 ); ( e , T2 ); ( f , T2 ); ( g , T2 ); ( h , T2 ); ( i , T2 ); ( j , T2 ); ( k , T2 ); ( l , T2 ); ( m , T2 ); ( n , T2 ); ( o , T2 ); ( p , T2 ); ( q , T2 ); ( r , T2 ); ( s , T2 ); ( t , T2 ); ( u , T2 ); ( v , T2 ); ( w , T2 ); ( x , T2 ); ( y , T2 ); ( z , T2 ); ( _ , T2 ); 
+T1: ( = , T3 ); 
+T2: ( a , T2 ); ( b , T2 ); ( c , T2 ); ( d , T2 ); ( e , T2 ); ( f , T2 ); ( g , T2 ); ( h , T2 ); ( i , T2 ); ( j , T2 ); ( k , T2 ); ( l , T2 ); ( m , T2 ); ( n , T2 ); ( o , T2 ); ( p , T2 ); ( q , T2 ); ( r , T2 ); ( s , T2 ); ( t , T2 ); ( u , T2 ); ( v , T2 ); ( w , T2 ); ( x , T2 ); ( y , T2 ); ( z , T2 ); ( _ , T2 ); ( 1 , T2 ); ( 2 , T2 ); ( 3 , T2 ); ( 4 , T2 ); ( 5 , T2 ); ( 6 , T2 ); ( 7 , T2 ); ( 8 , T2 ); ( 9 , T2 ); ( 0 , T2 ); 
+T3: NULL
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

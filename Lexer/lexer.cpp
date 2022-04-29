@@ -3,6 +3,7 @@
  *    created: 2022 
  *	  describ:  词法分析器 Lexical Analysis 
  *				关键字(keys)、标识符(token)、运算符(operator)、界符(separator)、常量(constant) 
+ *				没有正规式输入的版本，输入源程序直接给出token表 
 **/
 
 #include <bits/stdc++.h>
@@ -21,7 +22,7 @@ bool start_of_token( char c );  	// 判断是否有可能为 标识符
 bool start_of_operator( char c );	// 判断是否有可能为 运算符 
 bool start_of_separator( char c );	// 判断是否有可能为 界符  
 bool start_of_constant( char c );	// 判断是否有可能为 常量 
-void tackle_line( string line );	// 一次处理一行输入 
+void scan_line( string line );	// 一次处理一行输入 
 void Print( string word, int identifier );
 void Print( int er ); 
 
@@ -31,14 +32,14 @@ int line_id = 1;
 
 int main()
 {
-	freopen( "input.txt", "r", stdin );
+	freopen( "source code.txt", "r", stdin );
 	
 	keys_init();
 	separators_init();
 	
 	do {
 		getline( cin, line );
-		tackle_line( line );
+		scan_line( line );
 		line_id++;
 	} while( line != "" );
 	return 0;
@@ -47,7 +48,7 @@ int main()
 
 /* -------------------------------------------function-----------------------------------*/
 
-void tackle_line( string line )
+void scan_line( string line )
 {
 	int n = line.length(), tag = 0, j = 0, i = 0;
 	string word = "";

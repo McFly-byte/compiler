@@ -1,0 +1,7 @@
+Start -> Token|Operator
+//Token
+Token->aAD|bAD|cAD|dAD|eAD|fAD|gAD|hAD|iAD|jAD|kAD|lAD|mAD|nAD|oAD|pAD|qAD|rAD|sAD|tAD|uAD|vAD|wAD|xAD|yAD|zAD|_AD
+AD->$|aAD|bAD|cAD|dAD|eAD|fAD|gAD|hAD|iAD|jAD|kAD|lAD|mAD|nAD|oAD|pAD|qAD|rAD|sAD|tAD|uAD|vAD|wAD|xAD|yAD|zAD|_AD|1AD|2AD|3AD|4AD|5AD|6AD|7AD|8AD|9AD|0AD
+//Operator
+Operator->+E|-E|*E|/E|%E|=E|<E|>E
+E->$|=
