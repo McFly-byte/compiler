@@ -1,0 +1,6 @@
+int main()
+{
+	int a = 135;
+	double d = 33.56;
+	float f = a + d; 
+}
