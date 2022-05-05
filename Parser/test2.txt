@@ -1,0 +1,7 @@
+(1,a,hhh)
+(1,b,hhh)
+(1,b,hhh)
+(1,c,hhh)
+(1,d,hhh)
+(1,e,hhh)
+(1,#,hhh)

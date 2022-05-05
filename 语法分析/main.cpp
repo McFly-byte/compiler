@@ -8,7 +8,7 @@
  
 int main()
 {
-	string file1 = "input.txt", file2 = "output.txt", file3 = "source code.txt";
+	string file1 = "input.txt", file2 = "output.txt", file3 = "source code.txt", file4 = "lexer.txt";
 	
 	NFA nfa;
 	
@@ -23,7 +23,7 @@ int main()
 	LA la;
 	la.T = nfa.Start;
 	
-	la.analysis( nfa, file3, file2 );
+	la.analysis( nfa, file3, file4 );
 
 	return 0;
 }

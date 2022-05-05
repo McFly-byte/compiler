@@ -1,0 +1,24 @@
+A->B|CB|DB|CDB|BA|CBA|DBA|CDBA
+C->aEFb|aEb
+F->cE|cEF
+E->Gdef|def
+D->GdHb|Gdb
+H->cd|cdH
+G->g
+B->I|J|K|L
+I->deMb
+M->N|NO
+O->PN|PNO
+N->Q|QR
+R->SQ|SQR
+Q->f|d
+P->h
+S->i
+J->jTkB|jTkBlB
+T->MUM
+U->m
+K->nToB
+L->pBq|pBVq
+V->B|BV
+
+*:i +:h ,:c -:h /:i ;:b <:m <=:m =:e ==:m >:m >=:m Constant:f Token:d Token1:H begin:p bool:g char:g const:a do:o double:g else:l end:q if:j int:g then:k while:n 变量类型:G 变量说明:D 表达式:M 常量定义:E 常量定义1:F 常量说明:C 乘法运算符:S 程序:A 当循环语句:K 赋值语句:I 复合1:V 复合语句:L 关系运算符:U 加法运算符:P 条件:T 条件语句:J 项:N 项1:O 因子:Q 因子1:R 语句:B 

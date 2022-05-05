@@ -1,0 +1,5 @@
+input.txt：输入3型文法
+regular grammar.txt：3型文法（备份，防误删）
+output.txt：输出（测试用）
+source code.txt：输入源代码程序
+lexer.txt：词法分析结果，供语法分析使用
