@@ -4,5 +4,4 @@ begin
 a = x + y;
 b = x * a;
 if a == 3 then b = 10;
-while a == 3 do b = b+2;
-end
+while a == 3 
